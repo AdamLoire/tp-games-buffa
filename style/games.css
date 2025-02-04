@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(#13181d, #20212e, #341b47);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-container{
+    background-color: rgb(38, 88, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.game-btn {
+    background: linear-gradient(135deg, #b42929, #f40000); 
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+}
+
+.game-btn-clicked{
+    background: linear-gradient(135deg, #5029b4, #28054f); 
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+}
+
+.game-btn:hover {
+    background: linear-gradient(135deg, #ff1a1a, #cc0000); 
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.6);
+    transform: scale(1.05); 
+}
+
+.game-btn-clicked:hover {
+    background: linear-gradient(135deg, #6617d3, #44015b); 
+    transform: scale(1.05); 
+}
+
+#home-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#home-btn img {
+    width: 40px; 
+    height: 40px;
+    opacity: 0.7; 
+    transition: opacity 0.2s ease-in-out;
+    transform: rotate(180deg);
+}
+
+#home-btn:hover img {
+    opacity: 1;
+    transform: rotate(180deg) scale(1.1);
+    
+}
+
+#home-btn:active img {
+    transform: rotate(180deg) scale(0.95);
+}
+
+
+@media (max-width: 1000px){
+    .game-container{
+        width: 60%;
+    }
+
+    .btn-container {
+        width: 70%;
+    }
+
+    .game-btn{
+        padding: 10px 20px;
+    }
+}
