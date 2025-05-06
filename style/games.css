@@ -1,84 +1,66 @@
-body{
+body {
     background: linear-gradient(#13181d, #20212e, #341b47);
-    height: 100vh;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
-}
-
-.container {
-    height: 100vh;
-    width: 100%;
+  }
+  
+  .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.game-container{
-    background-color: rgb(38, 88, 239);
+    gap: 30px;
+    padding: 40px 20px;
+    flex-direction: row;
+  }
+  
+  .game-container {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: #2658ef;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 1px solid orange;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 40%;
-    border-radius: 10px;
-    border: 1px solid orange;
-}
-.game-container h1{
-    color: #5029b4;
-    text-shadow: 4px 2px 4px #d33bfd;;
-    font-size: 1.7vw;
-    font-weight: bold;
-    scale : 1.5
-}
-.btn-container {
+    justify-content: flex-end;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .game-container:hover {
+    transform: scale(1.03);
+  }
+  
+  .btn-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
     justify-content: center;
-    
-}
-
-.game-btn {
-    margin-top: 10%;
-    background: linear-gradient(135deg, #28054f, #d33bfd); 
+  }
+  
+  .game-btn {
+    background: linear-gradient(135deg, #28054f, #d33bfd);
     color: white;
     border: none;
-    scale : 1.3;
     padding: 14px 24px;
     font-weight: bold;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px #d33bfd;
-
-}
-
-.game-btn-clicked{
-    background: linear-gradient(135deg, #5029b4, #28054f); 
-    color: white;
-    border: none;
-    padding: 14px 24px;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
-}
-
-.game-btn:hover {
-    background: linear-gradient(135deg, #5029b4, #28054f); 
+  }
+  
+  .game-btn:hover {
+    background: linear-gradient(135deg, #5029b4, #28054f);
     box-shadow: 0 6px 15px rgba(255, 0, 0, 0.6);
-    transform: scale(1.05); 
-}
-
-.game-btn-clicked:hover {
-    background: linear-gradient(135deg, #6617d3, #44015b); 
-    transform: scale(1.05); 
-}
-
-#home-btn {
+    transform: scale(1.05);
+  }
+  
+  #home-btn {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -86,74 +68,61 @@ body{
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-}
-
-#home-btn img {
-    width: 40px; 
+  }
+  
+  #home-btn img {
+    width: 40px;
     height: 40px;
-    opacity: 0.7; 
-    transition: opacity 0.2s ease-in-out;
+    opacity: 0.7;
     transform: rotate(180deg);
-}
-
-#home-btn:hover img {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #home-btn:hover img {
     opacity: 1;
     transform: rotate(180deg) scale(1.1);
-    
-}
-
-#home-btn:active img {
+  }
+  
+  #home-btn:active img {
     transform: rotate(180deg) scale(0.95);
-}
-
-
-@media (max-width: 1000px){
-    .game-container{
-        width: 60%;
-    }
-
-    .btn-container {
-        width: 70%;
-    }
-
-    .game-btn{
-        padding: 10px 20px;
-    }
-}
-
-.mahjong-background {
-    height: 45%;
-    scale: 0.8;
-    background-image: url("../assets/mahjong.png");
-    background-size: 100% auto;      
-    background-position: center 30%; 
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
-}
-
-.dreamlanders-background {
-    height: 45%;
-    scale: 0.8;
-    background-image: url("../assets/DreamLanders.png");
-    background-size: 115% auto;       
-    background-position: center 0%; 
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
-    
-   
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.candy-crush-background {
-    height: 45%;
+  }
+  
+  .candy-crush-background {
     background-image: url("../assets/candy_crush.png");
-    background-size: 100% auto;       
-    scale: 0.8;
-    background-position: center 30%; 
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
+  }
+  
+  .mahjong-background {
+    background-image: url("../assets/mahjong.png");
+  }
+  
+  .dreamlanders-background {
+    background-image: url("../assets/DreamLanders.png");
+  }
+  
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .game-container {
+      width: 90vw;
+      height: 250px;
+    }
+  
+    .game-btn {
+      padding: 12px 20px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .game-container {
+      height: 200px;
+    }
+  
+    .game-btn {
+      padding: 10px 16px;
+      font-size: 0.85rem;
+    }
+  }
+  
