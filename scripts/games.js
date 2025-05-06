@@ -1,4 +1,7 @@
-window.onload = init
+window.onload = () => {
+    init();
+    setupGameRedirects(); // Ajout de la redirection après l'init
+};
 
 function init() {
     let backBtn = document.getElementById("home-btn");
@@ -64,3 +67,21 @@ const scoreBtnNotClickedLogic = (btn) => {
 
     btn.classList.add("clicked");
 }
+
+
+function setupGameRedirects() {
+    const gameButtons = document.querySelectorAll(".game-btn");
+
+    gameButtons.forEach((btn) => {
+        const gameClass = Array.from(btn.classList).find(cls => /^game\d+$/.test(cls));
+        if (gameClass) {
+            const gameNumber = gameClass.replace("game", "");
+            btn.addEventListener("click", () => {
+                window.location.href = `game${gameNumber}/game${gameNumber}index.html`;
+            });
+        }
+    });
+}
+
+
+
