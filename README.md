@@ -3,7 +3,7 @@
 ## Sommaire
 
 1. Mahjong Canvas Game  
-2. Dreamworld Explorer (Babylon.js)
+2. Dreamworld Explorer ("DreamLanders") (Babylon.js)
 3. Accès sites
 
 ---
