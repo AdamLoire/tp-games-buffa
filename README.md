@@ -4,6 +4,7 @@
 
 1. Mahjong Canvas Game  
 2. Dreamworld Explorer (Babylon.js)
+3. Accès sites
 
 ---
 
@@ -177,3 +178,10 @@ Ces deux jeux illustrent deux approches opposées :
 
 Les deux projets partagent une volonté d’apprendre en créant, avec des systèmes complets, pensés pour évoluer.
 
+---
+
+
+## 🔗 3. Accès au site
+
+- **Site global** : [https://bondetbudeanskiloiregames.vercel.app](https://bondetbudeanskiloiregames.vercel.app)  
+- **Liste des jeux** : [https://bondetbudeanskiloiregames.vercel.app/html/games.html](https://bondetbudeanskiloiregames.vercel.app/html/games.html)
