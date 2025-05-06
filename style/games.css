@@ -1,15 +1,16 @@
 body {
     background: linear-gradient(#13181d, #20212e, #341b47);
     margin: 0;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     color: white;
   }
   
   .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 70vh;
     gap: 30px;
     padding: 40px 20px;
     flex-direction: row;
@@ -17,8 +18,8 @@ body {
   
   .game-container {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 25vw;
+    height: 30vh;
     background-color: #2658ef;
     background-size: cover;
     background-position: center;
@@ -27,7 +28,7 @@ body {
     border: 1px solid orange;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
@@ -89,6 +90,7 @@ body {
   
   .candy-crush-background {
     background-image: url("../assets/candy_crush.png");
+    
   }
   
   .mahjong-background {
@@ -102,11 +104,12 @@ body {
   @media (max-width: 900px) {
     .container {
       flex-direction: column;
+      
     }
   
     .game-container {
       width: 90vw;
-      height: 250px;
+      height: 100vh;
     }
   
     .game-btn {
@@ -117,7 +120,10 @@ body {
   
   @media (max-width: 500px) {
     .game-container {
-      height: 200px;
+      height: 25vh;
+      display: flex;
+      flex-direction: column;
+
     }
   
     .game-btn {
