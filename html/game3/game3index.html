@@ -43,18 +43,15 @@
     <button id="back-btn">⬅ Retour aux jeux</button>
     <canvas id="renderCanvas"></canvas>
 
-    <!-- Babylon.js -->
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
 
-    <!-- Redirection vers le menu -->
     <script>
       document.getElementById("back-btn").addEventListener("click", () => {
         window.location.href = "../games.html";
       });
     </script>
 
-    <!-- Point d'entrée en module -->
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
