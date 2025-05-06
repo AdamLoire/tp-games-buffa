@@ -1,5 +1,3 @@
-// File: sceneMap.js
-
 import { createDream1 } from "../assets/dreams/dream1.js";
 
 export function createScene(engine) {
