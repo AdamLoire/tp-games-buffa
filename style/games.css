@@ -52,6 +52,7 @@ body{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 10px #d33bfd;
+
 }
 
 .game-btn-clicked{
