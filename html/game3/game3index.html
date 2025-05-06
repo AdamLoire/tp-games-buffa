@@ -11,19 +11,48 @@
         width: 100%;
         height: 100%;
       }
+
       #renderCanvas {
         width: 100%;
         height: 100%;
         touch-action: none;
+        display: block;
+      }
+
+      #back-btn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      #back-btn:hover {
+        opacity: 1;
       }
     </style>
   </head>
   <body>
+    <button id="back-btn">⬅ Retour aux jeux</button>
     <canvas id="renderCanvas"></canvas>
 
     <!-- Babylon.js -->
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+    <!-- Redirection vers le menu -->
+    <script>
+      document.getElementById("back-btn").addEventListener("click", () => {
+        window.location.href = "../games.html";
+      });
+    </script>
 
     <!-- Point d'entrée en module -->
     <script type="module" src="src/main.js"></script>
