@@ -28,7 +28,7 @@ body{
 .game-container h1{
     color: #5029b4;
     text-shadow: 4px 2px 4px #d33bfd;;
-    font-size: 60px;
+    font-size: 1.7vw;
     font-weight: bold;
     scale : 1.5
 }
