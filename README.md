@@ -177,5 +177,3 @@ Ces deux jeux illustrent deux approches opposées :
 
 Les deux projets partagent une volonté d’apprendre en créant, avec des systèmes complets, pensés pour évoluer.
 
-message.txt
-7 Ko
