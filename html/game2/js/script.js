@@ -53,4 +53,10 @@ window.onload = async () => {
   window.addEventListener("click", e => {
     if (e.target === modal) modal.style.display = "none";
   });
+
+
+  const gameButtons = document.getElementById("game-btn");
+  gameButtons.addEventListener("click", () => {
+    window.location.href="../games.html";
+  });    
 };
